@@ -15,4 +15,5 @@ function f()
     console.log(this);
     //open the html related content
 }
+console.log("yes")
 

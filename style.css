@@ -21,7 +21,6 @@
 .container
 {
     display:inline-block;
-    justify-content: center;
     position: absolute;
     top:0px;
     left:200px;
@@ -34,4 +33,10 @@
 .test
 {
     display:inline;
+}
+#notification
+{
+    visibility:hidden;
+    height:400px;
+    background-color: black;
 }

@@ -37,6 +37,30 @@
 #notification
 {
     visibility:hidden;
-    height:400px;
+    height:50vh;
     background-color: black;
+}
+
+#cross
+{
+    position: absolute;
+    right:10px;
+}
+#variable_html
+{
+    font-size: 20px;
+    color:yellow;
+}
+th{
+    width:175px;
+}
+td,th:hover
+{
+    cursor:grab;
+}
+th,td{
+    text-align: center;
+}
+td{
+    color:white;
 }

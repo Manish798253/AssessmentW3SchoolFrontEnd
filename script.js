@@ -11,26 +11,29 @@ element.addEventListener("click",f);
 element.visibility=false;
 console.log(i);
 }
-var div_element=undefined;
+
 function f()
 {
+  var div_element=document.getElementById("notification");
     console.log(this);
     this.visibility=!this.visibility;
+    var dropDowmImg=this.firstChild;
     if(this.visibility==true)
     {
+      console.log(dropDowmImg);
+      dropDowmImg.style.transform='rotate(180deg)';
+      div_element.style.visibility="visible";
     //open the html related content
-   div_element=document.createElement("div");
-    div_element.style.width="500px";
-    div_element.style.height="200px";
-    div_element.style.backgroundColor="black";
-   this.appendChild(div_element);
     }
     else
     {
         console.log(this);
-      this.firstChild.innerHTML="";
+        div_element.style.visibility="hidden";
+        dropDowmImg.style.transform='rotate(0deg)';
+
+
     }
  
 }
-console.log("yes")
+
 

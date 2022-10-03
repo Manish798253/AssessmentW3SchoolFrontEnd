@@ -37,14 +37,18 @@
 #notification
 {
     visibility:hidden;
-    height:50vh;
+    height:100vh;
     background-color: black;
+    position: relative;
+    z-index: 1;
 }
 
 #cross
 {
     position: absolute;
     right:10px;
+    width: 90px;
+    height:50px;
 }
 #variable_html
 {
@@ -64,4 +68,14 @@ th,td{
 td{
     color:white;
     font-size: 15px;
+}
+.container-main
+{
+    background-color: black;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    height:50vh;
+    position:relative;
+    top:-700px;
+    z-index: 0;
 }

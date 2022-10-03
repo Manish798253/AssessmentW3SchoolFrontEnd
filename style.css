@@ -52,7 +52,7 @@
     color:yellow;
 }
 th{
-    width:175px;
+    width:400px;
 }
 td,th:hover
 {
@@ -63,4 +63,5 @@ th,td{
 }
 td{
     color:white;
+    font-size: 15px;
 }

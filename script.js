@@ -24,6 +24,7 @@ function f()
     //any other dropdown being opened by its previous linked handlebar
     for(let i=0;i<pullDownHandleBars.length;i++)
     {
+      console.log(i+","+this==pullDownHandleBars[i]);
        if(i==0&&pullDownHandleBars[i]==this)
        {
         //write html for 1st guy
@@ -57,22 +58,110 @@ function f()
         
         `;
        }
-       if(i==1&&pullDownHandleBars[i]==this)
+       else if(i==1&&pullDownHandleBars[i]==this)
        {
         //write html for 2nd
-        div_element.children.item(1).innerText="b";
+        div_element.children.item(1).innerHTML=`
+        <div style="font-weight:bold; height:50px;font-size:30px">&nbsp;&nbsp;&nbsp;REFERENCES</div>
+        <table>
+        <thead style="font-weight:bold; height:50px;">
+        <tr>
+        <th>HTML</th>
+        <th>JAVA SCRIPT</th>
+        <th>SERVER SIDE</th>
+        <th>CHARACTER SETS</th>
+        </tr>
+        </thead>
+        <tr>
+        <td>HTML TAG REFERENCE</td>
+        <td>JAVA SCRIPT REFERENCE</td>
+        <td>SQL REFERENCE</td>
+        <td>HTML CHARACTER REFERENCE</td>
+        </tr>
+        <tr>
+        <td>HTML BROWSER SUPPORT</td>
+        <td>HTML DOM REFERENCE</td>
+        <td>MySQL REFERENCE</td>
+        <td>HTML ASCII</td>
+        </tr>
+        <tr>
+        <td>HTML EVENT REFERENCE</td>
+        <td>jQUERY REFERENCE</td>
+        <td>PHP REFERENCE</td>
+        <td>HTML ANSI</td>
+        </tr>
+        </table>
+        
+        
+        `;
 
        }
-       if(i==2&&pullDownHandleBars[i]==this)
+      else if(i==2&&pullDownHandleBars[i]==this)
        {
         //write html for 3rd guy
-        div_element.children.item(1).innerText="c";
+        div_element.children.item(1).innerHTML=`
+        <div style="font-weight:bold; height:50px;font-size:30px">&nbsp;&nbsp;&nbsp;TUTORIALS</div>
+        <table>
+        <thead style="font-weight:bold; height:50px;">
+        <tr>
+        <th>HTML AND CSS</th>
+        <th>SERVER SIDE</th>
+        <th>CSS</th>
+        </tr>
+        </thead>
+        <tr>
+        <td>Learn HTML</td>
+        <td>Learn JS</td>
+        <td>Learn SQL</td>
+        </tr>
+        <tr>
+        <td>Learn CSS</td>
+        <td>Learn Jquery</td>
+        <td>Learn MySQL</td>
+        </tr>
+        <tr>
+        <td>Learn RWD</td>
+        <td>Learn React</td>
+        <td>Learn PHP</td>
+        </tr>
+        </table>
+        
+        
+        `;
 
        }
-       if(i==3&&pullDownHandleBars[i]==this)
+       else if(i==3&&pullDownHandleBars[i]==this)
        {
         //write html for 4th guy
-        div_element.children.item(1).innerText="d";
+        div_element.children.item(1).innerHTML=`
+        <div style="font-weight:bold; height:50px;font-size:30px">&nbsp;&nbsp;&nbsp;TUTORIALS</div>
+        <table>
+        <thead style="font-weight:bold; height:50px;">
+        <tr>
+        <th>HTML AND CSS</th>
+        <th>SERVER SIDE</th>
+        <th>CSS</th>
+        </tr>
+        </thead>
+        <tr>
+        <td>Learn HTML</td>
+        <td>Learn JS</td>
+        <td>Learn SQL</td>
+        </tr>
+        <tr>
+        <td>Learn CSS</td>
+        <td>Learn Jquery</td>
+        <td>Learn MySQL</td>
+        </tr>
+        <tr>
+        <td>Learn RWD</td>
+        <td>Learn React</td>
+        <td>Learn PHP</td>
+        </tr>
+        </table>
+        
+        
+        `;
 
        }
       var ele=pullDownHandleBars[i].firstChild;//dropdown

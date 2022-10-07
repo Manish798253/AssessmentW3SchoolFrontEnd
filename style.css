@@ -1,3 +1,4 @@
+@media (width>=650px){
 .black
 {
     color: black;
@@ -9,6 +10,34 @@
     text-align: center;
     line-height: 100px;
 }
+.image
+{
+display:inline-block;
+width:70px;
+height:90px;
+}
+}
+@media (width<650px){
+    .black
+    {
+        color: black;
+        font-weight: bold;
+        display:inline-block;
+        font-size: 8px;
+        width:50px;
+        height:50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .image{
+        display:inline-block;
+        width:35px;
+        height:35px;
+    }
+    }
+
+
+
 .black:hover
 {
     background-color: green;
@@ -23,13 +52,10 @@
     display:inline-block;
     position: absolute;
     top:0px;
-    left:200px;
+    left:20vw;
 }
-.image
-{
-    display:inline-block;
-   
-}
+
+
 .test
 {
     display:inline;

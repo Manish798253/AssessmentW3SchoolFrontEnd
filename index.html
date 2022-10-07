@@ -9,7 +9,7 @@
     <script async defer src="script.js"></script>
 </head>
 <body>
-    <img  src="w3schoolsLogo2.jpg"  width="70" height="90">
+    <img  class="image" src="w3schoolsLogo2.jpg" >
     
     <div class="container">
         <span class="black" id="1" ><img src="dropdown.png"  width="10" height="10">Tutorials</span>
@@ -24,12 +24,24 @@
 <div id="variable_html"></div>
    </div>
 <div class="container-main" ><br><br>
-<div style="color:white;font-size:40px;width:100vw;height:40px; text-align: center;">LEARN TO CODE</div>
+<div style="color:white;text-align: center;
+font-size:20px;width:100vw;height:40px;
+@media(width>650px){
+font-size:40px;} 
+">LEARN TO CODE</div>
 <br><br><br>
-<div style="color:yellow;font-size:30px;width:100vw;height:50px; text-align: center;">With The World's Largest Web Developer Site</div>
+<div style="color:yellow; text-align: center;
+width:100vw;height:50px;font-size:15px;
+@media(width>650px){ font-size:30px;}
+">With The World's Largest Web Developer Site</div>
 <div style="width:100vw;height:50px; text-align: center;">
     <input type="text" placeholder="Search our tutorials, e.g.HTML" style="text-align: center;
-    width:50vw;height:50px;
+   font-size:7px;
+   width:50vw;height:50px;
+   @media(width>650px)
+   {
+    font-size:100px;
+   }
     "/>
 </div>
 <div></div>
